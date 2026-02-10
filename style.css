@@ -1,0 +1,78 @@
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    margin: 0;
+    color: #444;
+    background-color: #fdfaf7;
+}
+
+header {
+    background: #6d8c54; /* Зелений колір листя */
+    color: #fff;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+nav {
+    background: #fff;
+    border-bottom: 2px solid #eee;
+    padding: 0.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #6d8c54;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+nav a:hover {
+    color: #d4a373; /* Колір пелюсток */
+}
+
+.container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+h1, h2 { color: #4a5d38; }
+
+.flower-card {
+    border: 1px solid #eee;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.error-link { color: #d62828 !important; }
+
+footer {
+    text-align: center;
+    padding: 3rem;
+    background: #4a5d38;
+    color: white;
+    margin-top: 2rem;
+}
