@@ -76,3 +76,15 @@ footer {
     color: white;
     margin-top: 2rem;
 }
+
+.flower-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.flower-card {
+    flex: 1 1 300px;
+    max-width: 400px;
+}
