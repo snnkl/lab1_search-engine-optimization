@@ -84,19 +84,6 @@ footer {
     justify-content: center;
 }
 
-.order-btn {
-    background-color: #6d8c54; 
-    color: white;
-    display: block;
-    margin: 20px auto 0 auto; 
-    text-align: center;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-    font-weight: bold;
-}
 
 .order-btn:hover {
     background-color: #4a5d38;
