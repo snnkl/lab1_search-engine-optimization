@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-39VFWJ983L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-39VFWJ983L');
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
@@ -33,7 +42,30 @@
             <p><strong>Адреса:</strong> м. Луцьк, вул. Потебні, Україна</p>
             <p>Ми завжди раді допомогти вам із вибором найкращих рослин. Перегляньте наші <a href="services.html">авторські букети в галереї</a>, щоб знайти натхнення.</p>
         </div>
+<button id="contact_order_btn" class="order-btn" style="margin-top: 15px;">Замовити консультацію</button>
+        </div>
 
+        <hr style="margin: 30px 0; border: 0; border-top: 1px solid #eee;">
+
+        <div class="survey-box">
+            <h3>Опитування для клієнтів</h3>
+            <p>Який букет ви шукаєте сьогодні?</p>
+            <form id="contact_survey">
+                <div style="margin-bottom: 10px;">
+                    <input type="radio" id="gift" name="purpose" value="gift">
+                    <label for="gift">На подарунок</label><br>
+                    <input type="radio" id="home" name="purpose" value="home">
+                    <label for="home">Для дому</label><br>
+                    <input type="radio" id="event" name="purpose" value="event">
+                    <label for="event">Для свята/весілля</label>
+                </div>
+                
+                <button type="submit" id="submit_survey_btn" class="order-btn">Надіслати відгук</button>
+            </form>
+            <p id="survey_thanks" style="display:none; color: #ff69b4; font-weight: bold; margin-top: 10px;">
+                Дякуємо! Ваша думка важлива для нас.
+            </p>
+        </div>
         <p>
             Шукаєте інформацію про те, як доглядати за покупкою? Наші експерти підготували <a href="blog.html">статті про вибір добрив</a> та збереження свіжості зрізаних квітів.
         </p>
