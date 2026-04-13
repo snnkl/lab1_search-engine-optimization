@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-39VFWJ983L"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-39VFWJ983L');
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-39VFWJ983L"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-39VFWJ983L');
+    </script>
     <meta charset="UTF-8">
     <title>Світ Квітів — Доставка свіжих букетів та квітів по Україні</title>
     <meta name="description" content="Шукаєте ідеальний подарунок? Замовляйте свіжі букети з доставкою в магазині Світ Квітів. Авторські композиції та гарантія свіжості. Оберіть свій букет зараз!">
@@ -37,10 +35,7 @@
             <h3>Півонії</h3>
             <picture>
                 <source srcset="img/peonies.webp" type="image/webp">
-                <img src="img/peonies.jpg" 
-                     alt="Ніжні рожеві півонії" 
-                     width="1170" 
-                     height="1258">
+                <img src="img/peonies.jpg" alt="Ніжні рожеві півонії" width="1170" height="1258">
             </picture>
             <p>Ніжні та ароматні квіти, що стануть прикрасою будь-якого саду.
             <a href="copy-page.html">Більше...</a></p>
@@ -51,11 +46,7 @@
             <h3>Лаванда</h3>
             <picture>
                 <source srcset="img/lavender.webp" type="image/webp">
-                <img src="img/lavender.jpg" 
-                     alt="Букет свіжої лаванди" 
-                     width="905" 
-                     height="905"
-                    loading="lazy">
+                <img src="img/lavender.jpg" alt="Букет свіжої лаванди" width="905" height="905" loading="lazy">
             </picture>
             <p>Аромат Провансу на вашому підвіконні.</p>
             <button id="order_lavender" class="order-btn">Замовити лаванду</button>
@@ -64,5 +55,26 @@
     <footer>
         <p>&copy; 2026 Світ Квітів. Усі права захищені.</p>
     </footer>
+
+    <script>
+      // 1. Кліки по кнопках замовлення
+      document.querySelectorAll('.order-btn').forEach(function(el) {
+        el.addEventListener('click', function() {
+          gtag('event', 'order_click', {
+            'button_id': this.id,
+            'flower_type': this.innerText
+          });
+        });
+      });
+
+      // 2. Кліки по навігації
+      document.querySelectorAll('nav a').forEach(function(el) {
+        el.addEventListener('click', function() {
+          gtag('event', 'nav_click', {
+            'menu_item': this.innerText
+          });
+        });
+      });
+    </script>
 </body>
 </html>
